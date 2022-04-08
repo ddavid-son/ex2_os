@@ -9,6 +9,8 @@
 
 int main(int argc, char *argv[])
 {
+    FILE *of = fopen(argv[argc - 1], "w"); // making sure the file is empty;
+    fclose(of);
     for (int i = 1; i < argc - 1; i++)
     {
         if (fork() == 0)

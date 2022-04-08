@@ -20,7 +20,6 @@ int arr_size = 16;
 
 double calc_avg();
 void sort_grades();
-// void write_to_file();
 void print_data_summary();
 void get_stud_data_stdin();
 bool stud_exists(char *name);
@@ -100,22 +99,6 @@ int compare(const void *a, const void *b)
 {
     return *(int *)b - *(int *)a;
 }
-
-// void write_to_file()
-// {
-//     FILE *fp;
-//     fp = fopen("merged.txt", "w");
-//     for (int i = 0; i < studs_num; i++)
-//     {
-//         fprintf(fp, "%s ", students[i].name);
-//         for (int j = 0; j < students[i].grades_num; j++)
-//         {
-//             fprintf(fp, "%d ", students[i].grades[j]);
-//         }
-//         fprintf(fp, "\n");
-//     }
-//     fclose(fp);
-// }
 
 void get_stud_data(int file_num, char *argv[])
 {
