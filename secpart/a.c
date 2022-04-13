@@ -9,10 +9,10 @@
 
 int main()
 {
-    printf("my-pid = %d first process starting\n", getpid()); // parent pid is 100
+    printf("ggg my-pid = %d first process starting\n", getpid()); // parent pid is 100
     if (fork() || fork() == 0)
     {
-        printf("my-pid = %d parent-pid = %d starting\n", getpid(), getppid());
+        printf("in my-pid = %d parent-pid = %d starting\n", getpid(), getppid());
     }
     if (getpid() != 100)
         sleep(1);
