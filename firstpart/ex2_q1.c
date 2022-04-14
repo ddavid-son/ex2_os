@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
             char *newargv[] = {"", argv[argc - 1], NULL};
             execve("merger", newargv, NULL);
         }
-        sleep(1);
+        wait(NULL);
     }
     return 0;
 }
